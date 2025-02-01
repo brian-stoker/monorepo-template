@@ -16,13 +16,13 @@ A template to create a monorepo SST v3 project. [Learn more](https://sst.dev/doc
 3. Rename the files in the project to the name of your app.
 
    ```bash
-   npx replace-in-file '/monorepo-template/g' 'MY_APP' '**/*.*' --verbose
+   npx replace-in-file '/sst-monorepo-template-pnpm/g' 'MY_APP' '**/*.*' --verbose
    ```
 
 4. Deploy!
 
    ```bash
-   npm install
+   pnpm install
    npx sst deploy
    ```
 
@@ -30,7 +30,7 @@ A template to create a monorepo SST v3 project. [Learn more](https://sst.dev/doc
 
 ## Usage
 
-This template uses [npm Workspaces](https://docs.npmjs.com/cli/v8/using-npm/workspaces). It has 3 packages to start with and you can add more it.
+This template uses [pnpm Workspaces](https://pnpm.io/pnpm-workspace_yaml). It has 3 packages to start with and you can add more it.
 
 1. `core/`
 
@@ -55,7 +55,7 @@ This template uses [npm Workspaces](https://docs.npmjs.com/cli/v8/using-npm/work
    We also have [Vitest](https://vitest.dev/) configured for testing this package with the `sst shell` CLI.
 
    ```bash
-   npm test
+   pnpm test
    ```
 
 2. `functions/`
@@ -67,7 +67,7 @@ This template uses [npm Workspaces](https://docs.npmjs.com/cli/v8/using-npm/work
     This is for any scripts that you can run on your SST app using the `sst shell` CLI and [`tsx`](https://www.npmjs.com/package/tsx). For example, you can run the example script using:
 
    ```bash
-   npm run shell src/example.ts
+   pnpm run shell src/example.ts
    ```
 
 ### Infrastructure

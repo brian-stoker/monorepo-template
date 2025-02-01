@@ -1,9 +1,9 @@
 {
-  "name": "@monorepo-template/scripts",
+  "name": "@sst-monorepo-template-pnpm/scripts",
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
-    "@monorepo-template/core": "*",
+    "@sst-monorepo-template-pnpm/core": "workspace:*",
     "sst": "*"
   },
   "scripts": {
